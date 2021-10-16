@@ -154,3 +154,16 @@ def imgupload_employee(request):
         entry=Employee.objects.upload(file=request.data['file'])
         return Response({"status":True,"message":"Employee Image upload Successfully"})'''
   
+
+
+  #### urls
+     #url(r'^edit-employee$',views.edit_employee, name='index1'),
+    #url(r'^get-employee$', views.get_employee, name='index1'),
+    #url(r'^delete-employee$', views.delete_employee, name='index1'),
+    #url(r'^view-employee$', views.view_employee, name='index1'),
+    #url(r'^viewage-employees$', views.viewage_employees, name='index1'),
+    #url(r'^viewbyemail-employee$', views.viewbyemail_employee, name='index1'),
+    #url(r'^login-employee$', views.login_employee, name='index1'),
+    #url(r'^viewbyname-employees$', views.viewbyname_employees, name='index1'),
+    #url(r'^view-employees$', views.view_employees, name='index1'),
+    #url(r'^imgupload-employee$', views.imgupload_employee, name='index1'),

@@ -30,3 +30,24 @@ class Customer(Document):
     updated_at = fields.DateTimeField(default=datetime.now)
     created_by = fields.StringField()
     updated_by = fields.StringField()
+
+
+class Loan(Document):
+    loan_name = fields.StringField(required=True)
+    is_active = fields.BooleanField(default=True)
+    created_at = fields.DateTimeField(default=datetime.now)
+    updated_at = fields.DateTimeField(default=datetime.now)
+    created_by = fields.StringField()
+    updated_by = fields.StringField()
+
+
+class User(Document):
+    user_name = fields.StringField(required=True)
+    position = fields.StringField(required=True)
+    user_id = fields.StringField(required=True)
+    password = fields.StringField(required=True)
+    is_active = fields.BooleanField(default=True)
+    created_at = fields.DateTimeField(default=datetime.now)
+    updated_at = fields.DateTimeField(default=datetime.now)
+    created_by = fields.StringField()
+    updated_by = fields.StringField()
